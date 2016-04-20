@@ -3022,4 +3022,5 @@ if($mybb->input['action'] == "emailuser")
 if(!$mybb->input['action'])
 {
 	header("Location: index.php");
+	exit;
 }
