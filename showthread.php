@@ -253,6 +253,7 @@ if($mybb->input['action'] == "newpost")
 		}
 
 		header("Location: ".htmlspecialchars_decode(get_post_link($newpost['pid'], $tid)).$highlight."#pid{$newpost['pid']}");
+		exit;
 	}
 	else
 	{
