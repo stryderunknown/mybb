@@ -1656,6 +1656,7 @@ if($mybb->input['action'] == "do_stuff" && $mybb->request_method == "post")
 	if(!empty($mybb->input['hop']))
 	{
 		header("Location: private.php?fid=".$mybb->get_input('jumpto'));
+		exit;
 	}
 	elseif(!empty($mybb->input['moveto']))
 	{
